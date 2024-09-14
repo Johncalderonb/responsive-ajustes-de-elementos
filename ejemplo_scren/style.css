@@ -1,0 +1,28 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    background-color: rgb(213, 213, 213);
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-width: 1px;
+    border-style: solid;
+    gap:20px ;
+    padding: 20px 80px;
+}
+
+.item{
+    background-color: lightgreen;
+    width: 30%;
+    height: 50%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+
+}

@@ -1,0 +1,56 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    text-align: center; /*titulos centrados*/
+}
+
+.caja {
+    width: 350px;
+    background-color: #6fd2f3; /* Color de fondo */
+    border: 2px solid #d2b48c; /* Borde */
+    padding: 10px; /* Espaciado interno */
+    margin: 20px auto; /* Centrado automático */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+/* Estilo para el contenedor de imágenes */
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px; /* Espaciado entre imágenes */
+    justify-items: center; /*centrado de las imagenes*/
+    margin: 20px auto;
+    max-width: 1000px; /* Limita el ancho del grid */
+}
+
+.imagenes figure { 
+    text-align: center;
+    margin: 0; /* Quita el margen por defecto */
+}
+
+.imagenes img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #0b0b0b; /* Borde de las imágenes */
+    border-radius: 5px;
+}
+
+.imagenes figcaption { /*agrupacion de imagenes con texto */
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .imagenes {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+}
